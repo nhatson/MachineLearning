@@ -18,7 +18,7 @@ one = np.ones((X.shape[0], 1))
 Xbar = np.concatenate((one, X), axis = 1)
 
 # fit the model by Linear Regression
-regr = linear_model.LinearRegression(fit_intercept=False) # fit_intercept = False for calculating the bias
+regr = linear_model.LinearRegression(fit_intercept=False) # fit_intercept = False for calculating the bias (w0)
 regr.fit(Xbar, y)
 
 # Compare two results
