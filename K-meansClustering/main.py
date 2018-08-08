@@ -86,8 +86,8 @@ print(X)
 K = 3
 
 # origin
-# original_label = np.asarray([0]*N + [1]*N + [2]*N).T
-# kmeans_display(X, original_label)
+original_label = np.asarray([0]*N + [1]*N + [2]*N).T
+kmeans_display(X, original_label)
 
 (centers, labels, it) = kmeans(X, K)
 print('Centers found by our algorithm:')
